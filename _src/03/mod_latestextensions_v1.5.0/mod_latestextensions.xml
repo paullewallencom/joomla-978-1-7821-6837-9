@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5.5"
+	method="upgrade"
+	client="administrator">	
+    <name>Latest Extensions</name>
+    <creationDate>April 2013</creationDate>
+    <author>Tim Plummer</author> 
+    <authorEmail>example@packtpub.com</authorEmail>
+    <authorUrl>http://packtpub.com</authorUrl>
+    <copyright>Copyright (C) 2013 Packt Publishing. All rights reserved.</copyright>
+    <license>GNU GPL</license>
+    <version>1.5.0</version>
+	<description>Displays the most recently installed extensions.</description>
+	<files>
+		<filename module="mod_latestextensions">mod_latestextensions.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_latestextensions.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.mod_latestextensions.ini</language>
+	</languages>
+	<help url="HELP_EXTENSIONS_MODULE_LATESTEXTENSIONS_URL"/>
+	<media destination="mod_latestextensions" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+	</media>	
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+			<field 
+				name="count" 
+				type="text" 
+				default="5" 
+				label="MOD_LATESTEXTENSIONS_FIELD_COUNT_LABEL" 
+				description="MOD_LATESTEXTENSIONS_FIELD_COUNT_DESC" />
+   		</fieldset>
+   		
+		<fieldset name="advanced">
+			<field
+				name="layout"
+				type="modulelayout"
+				label="JFIELD_ALT_LAYOUT_LABEL"
+				description="JFIELD_ALT_MODULE_LAYOUT_DESC" />		
+			<field
+				name="moduleclass_sfx"
+				type="text"
+				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+   		</fieldset>
+   		
+		</fields>
+	</config>
+</extension>

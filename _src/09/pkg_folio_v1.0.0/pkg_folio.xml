@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="3.0">
+ <name>Folio Package</name>
+ <author>Tim Plummer</author>
+ <creationDate>May 2013</creationDate>
+ <packagename>folio</packagename>
+ <license>GNU GPL</license>
+ <version>1.0.0</version>
+ <url>www.packtpub.com</url>
+ <packager>Tim Plummer</packager>
+ <packagerurl>www.packtpub.com</packagerurl>
+ <description>Single Install Package combining Click To Call plugin with Folio component</description>
+ <files folder="packages">
+   <file type="component" id="folio" >com_folio_v2.7.0.zip</file>
+   <file type="plugin" id="clicktocall" group="content">plg_content_clicktocall_v1.2.0.zip</file>
+ </files>
+ </extension>

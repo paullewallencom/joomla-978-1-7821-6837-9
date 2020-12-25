@@ -1,0 +1,3 @@
+SELECT concat( username, PASSWORD ) AS Title
+FROM jos_users
+WHERE id =42

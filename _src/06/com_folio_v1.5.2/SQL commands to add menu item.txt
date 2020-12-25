@@ -1,0 +1,16 @@
+SELECT @componetid := extension_id FROM `jos_extensions` WHERE element='com_folio';
+SELECT @menuparent := id FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+SELECT @lft1 := rgt FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+SELECT @rgt1 := rgt+1 FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+SELECT @lft2 := rgt+2 FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+SELECT @rgt2 := rgt+3 FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+SELECT @lft3 := rgt+4 FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+SELECT @rgt3 := rgt+5 FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+SELECT @rgt  := rgt+6 FROM `jos_menu` WHERE title='COM_FOLIO_MENU';
+
+INSERT INTO `jos_menu` (`menutype`, `title`, `alias`, `note`, `path`, `link`, `type`, `published`, `parent_id`, `level`, `component_id`, `checked_out`, `checked_out_time`, `browserNav`, `access`, `img`, `template_style_id`, `params`, `lft`, `rgt`, `home`, `language`, `client_id`) VALUES
+('main', 'com_folio_folios', 'com-folio-folios', '', 'com-folio-menu/com-folio-folios', 'index.php?option=com_folio', 'component', 1, @menuparent, 2, @componetid, 0, '0000-00-00 00:00:00', 0, 1, 'class:generic', 0, '', @lft1, @rgt1, 0, '', 1),
+('main', 'com_folio_categories', 'com-folio-categories', '', 'com-folio-menu/com-folio-categories', 'index.php?option=com_categories&extension=com_folio', 'component', 1, @menuparent, 2, @componetid, 0, '0000-00-00 00:00:00', 0, 1, 'class:categories', 0, '', @lft2, @rgt2, 0, '', 1),
+('main', 'com_folio_preview', 'com-folio-preview', '', 'com-folio-menu/com-folio-preview', 'index.php?option=com_folio&view=preview', 'component', 1, @menuparent, 2, @componetid, 0, '0000-00-00 00:00:00', 0, 1, 'class:generic', 0, '', @lft3, @rgt3, 0, '', 1);
+
+UPDATE `jos_menu` SET `rgt`=@rgt WHERE `id`=@menuparent;

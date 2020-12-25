@@ -1,0 +1,9 @@
+ALTER TABLE [#__folio] ADD [checked_out] [int] NOT NULL DEFAULT '0';
+ALTER TABLE [#__folio] ADD [checked_out_time] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000';
+ALTER TABLE [#__folio] ADD [access] [int] NOT NULL DEFAULT '1';
+ALTER TABLE [#__folio] ADD [language] [nvarchar](7) NOT NULL DEFAULT '';
+ALTER TABLE [#__folio] ADD [created] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000';
+ALTER TABLE [#__folio] ADD [created_by] [bigint] NOT NULL DEFAULT '0';
+ALTER TABLE [#__folio] ADD [created_by_alias] [nvarchar](255) NOT NULL DEFAULT '';
+ALTER TABLE [#__folio] ADD [modified] [datetime] NOT NULL DEFAULT '1900-01-01T00:00:00.000';
+ALTER TABLE [#__folio] ADD [modified_by] [bigint] NOT NULL DEFAULT '0';

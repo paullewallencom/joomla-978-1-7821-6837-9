@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="finder" method="upgrade">
+	<name>plg_finder_folio</name>
+	<author>Tim Plummer</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>(C) 2013 Packt Publishing. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>example@packtpub.com</authorEmail>
+	<authorUrl>www.packtpub.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_FINDER_FOLIO_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<file plugin="folio">folio.php</file>
+    	<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_finder_folio.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_finder_folio.sys.ini</language>
+	</languages>
+</extension>

@@ -1,0 +1,1 @@
+ALTER TABLE `#__folio` ADD `featured` tinyint(3) unsigned NOT NULL DEFAULT '0';

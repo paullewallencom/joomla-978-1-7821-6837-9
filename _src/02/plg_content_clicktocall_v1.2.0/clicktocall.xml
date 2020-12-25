@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+		version="3.0"
+		type="plugin"
+		group="content"
+		method="upgrade">
+	<name>Content - Click To Call</name>
+	<author>Tim Plummer</author>
+	<creationDate>April 2013</creationDate>
+	<copyright>Copyright (C) 2013 Packt Publishing. All rights reserved.</copyright>
+	<license> http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>example@packtpub.com</authorEmail>
+	<authorUrl>http://packtpub.com</authorUrl>
+	<version>1.2.0</version>
+	<description>This plugin will replace phone numbers with click to call links. Requires Joomla 3.0 or greater.
+	Don't forget to publish this plugin!
+	</description>
+	<files>
+		<filename plugin="clicktocall">clicktocall.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_clicktocall.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">		
+			
+				<field name="phoneDigits1" type="text" 
+					default="4" 
+					label="PLG_CONTENT_CLICKTOCALL_FIELD_PHONEDIGITS1_LABEL" 
+					description="PLG_CONTENT_CLICKTOCALL_FIELD_PHONEDIGITS1_DESC" 
+				/>
+				<field name="phoneDigits2" type="text" 
+					default="4" 
+					label="PLG_CONTENT_CLICKTOCALL_FIELD_PHONEDIGITS2_LABEL" 
+					description="PLG_CONTENT_CLICKTOCALL_FIELD_PHONEDIGITS2_DESC" 
+				/>
+						
+   			</fieldset>
+		</fields>
+	</config>    	
+</extension>

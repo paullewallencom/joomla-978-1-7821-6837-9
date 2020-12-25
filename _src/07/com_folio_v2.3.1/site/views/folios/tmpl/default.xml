@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="com_folio_folios_view_default_title" option="com_folio_folios_view_default_option">
+		<message>
+			<![CDATA[com_folio_folios_view_default_desc]]>
+		</message>
+	</layout>
+	
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="catid"
+				type="category"
+				extension="com_folio"
+				class="inputbox"
+				default=""
+				label="COM_FOLIO_FIELD_CATID_LABEL"
+				description="COM_FOLIO_FIELD_CATID_DESC"
+				required="true"
+			>
+				<option value="0">JOPTION_SELECT_CATEGORY</option>
+			</field>			
+		</fieldset>
+	</fields>
+</metadata>

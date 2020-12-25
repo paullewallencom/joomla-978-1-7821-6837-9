@@ -1,0 +1,1 @@
+ALTER TABLE [#__folio] ADD [featured] [tinyint] NOT NULL DEFAULT '0';
